@@ -1,4 +1,4 @@
-::root {
+:root {
     --cor-de-fundo: #1e1e1e;
     --verde: #5FFF57;
     --branco: #FFFFFF;
@@ -54,14 +54,20 @@ span{
 }
 
 .botao:last-child{
-    border-
-    radius:0 0 20px 20px;
+    border-radius:0 0 20px 20px;
 }
-
-.ativo{ 
+ .botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 2px solid var(--verde);
 }
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo.ativo{
+    display: block;
+}
+  
+
 @media screen and (min-width:700px){
     .botoes{
         display: flex;
@@ -71,9 +77,6 @@ span{
     }
 
     .botao:last-child{
-        border-radius: 0 20px 20px 0;
-    }
-}
         border-radius: 0 20px 20px 0;
     }
 }
