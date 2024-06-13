@@ -3,13 +3,15 @@
     --verde: #5FFF57;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58,55,94,0,5);
-    --texto-fundo: rgba(58,55,94,0,3);
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
 }
 
 *{
+    color: var(--branco);
+}
+body{
     background-color: var(--cor-de-fundo);
-    color: #FFFFFF;
 }
 span{
     color: var(--verde);
@@ -56,7 +58,8 @@ span{
 .botao:last-child{
     border-radius:0 0 20px 20px;
 }
- .botao.ativo{
+
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 2px solid var(--verde);
 }
@@ -66,7 +69,20 @@ span{
 .aba-conteudo.ativo{
     display: block;
 }
-  
+.abas-textos{
+    background-color: var(--botao-inativo);
+    padding: 40px;
+    border-radius: 15px;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
 
 @media screen and (min-width:700px){
     .botoes{
