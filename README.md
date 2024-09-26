@@ -1,2 +1,2 @@
-# terceiroTRI_3-J
+# Projeto_3-J
 Maria Gabriela n27
